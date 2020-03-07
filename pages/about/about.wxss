@@ -1,0 +1,49 @@
+/* pages/about/about.wxss */
+.con
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.appicon
+{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.shadow
+{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(5px) brightness(80%) opacity(0.8);
+  margin-top: 15rpx;
+}
+.iconcon
+{
+  margin-top: 100rpx;
+}
+.nametext
+{
+  font-size: 24px;
+}
+.versiontext
+{
+  font-size: 13px;
+}
+.blank
+{
+  height: 100rpx;
+}
+.groupclass
+{
+  width: 700rpx;
+  margin-left: 26rpx;
+}
+.titleclass
+{
+  font-size: 17px;
+}

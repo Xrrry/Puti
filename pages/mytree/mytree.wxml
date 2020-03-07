@@ -1,0 +1,14 @@
+<!--pages/mytree/mytree.wxml-->
+<image class="backgroundimage" mode="aspectFill" src='{{treefilepath}}' animation="{{animation3}}" />
+<image class="backgroundimage1" mode="aspectFill" src='/images/line.png' animation="{{animation}}"/>
+<image class="backgroundimage2" mode="aspectFill" src='{{stageimagesrc}}' animation="{{animation1}}"/>
+<image class="backgroundimage3" mode="aspectFill" src='/images/number/number.png' animation="{{animation2}}"/>
+<view class="con">
+  <image class="headimage" src='{{user.headurl}}' />
+  <text class="name">{{user.name}}</text>
+</view>
+<view>
+  <text class="textcon">
+    <text class="text">成长值：{{user.growthvalue}}</text>
+  </text>
+</view>

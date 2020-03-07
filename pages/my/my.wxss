@@ -1,0 +1,132 @@
+/* pages/my/my.wxss */
+.icon{
+  height: 18px;
+  width: 18px;
+  border-radius: 50%;
+  margin-left: 24.5px;
+  margin-top: 19px;
+  position: absolute;
+  z-index: 1;
+}
+.container-1{
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+}
+.container-2{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  left: 300rpx;
+}
+.container-3{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userinfo {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.userinfo-avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.userinfo-avatar-s {
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+}
+.line{
+  height: 2rpx;
+  width: 800rpx;
+  border-bottom: solid 2rpx #EEEEEE;
+}
+.text{
+  font-size: 12px;
+}
+.name{
+  width: 470rpx;
+  margin-left: 40rpx;
+}
+.text1
+{
+  font-size: 20px;
+}
+.blank{
+  height: 15rpx;
+}
+.followimage{
+  height: 30rpx;
+  width: 30rpx;
+}
+.followimagecon{
+  margin-top: 8rpx;
+  margin-right: 5rpx;
+  margin-left: 45rpx;
+}
+.fansimage{
+  height: 30rpx;
+  width: 30rpx;
+}
+.fansimagecon{
+  margin-top: 8rpx;
+  margin-right: 5rpx;
+  margin-left: 20rpx;
+}
+.growthimage{
+  height: 30rpx;
+  width: 30rpx;
+}
+.growthimagecon{
+  margin-top: 10rpx;
+  margin-left: 20rpx;
+  margin-right: 2rpx;
+}
+.line1{
+  height: 0rpx;
+  width: 690rpx;
+  border-top: solid 1rpx #EEEEEE;
+  border-bottom: solid 1rpx #EEEEEE;
+  margin-left: 30rpx;
+}
+.blank1{
+  height: 20rpx;
+}
+.growthValue
+{
+  margin-right: 150rpx;
+  width: 200rpx;
+}
+.shadow
+{
+  width: 128rpx;
+  height: 128rpx;
+  border-radius: 50%;
+  position: absolute;
+  z-index: -1;
+  filter: blur(5px) brightness(80%) opacity(0.8);
+  margin-left: 20rpx;
+  margin-top: 13rpx;
+}
+.button
+{
+  background: #00C777;
+
+}
+.buttontext
+{
+  color: white;
+  font-size: 37rpx;
+}
+.followtext
+{
+  width: 100rpx;
+}
+.fanstext
+{
+  width: 100rpx;
+}

@@ -1,0 +1,82 @@
+<view>
+  <van-notify id="custom-selector" />
+  <view class="con">
+    <image class="userinfo-avator" src='{{userInfo.avatarUrl}}'></image>
+  </view>
+  <view class="inputclass">
+    <view wx:if="{{name}}">
+      <van-field size="large" value="{{currentname}}" clearable label="昵称" placeholder="{{name}}" border="{{ ture }}" bind:blur="onnamebindblur" input-class="fieldclass" />
+    </view>
+    <view wx:else>
+      <van-field size="large" value="{{currentname}}" clearable label="昵称" placeholder="{{userInfo.nickName}}" border="{{ ture }} " bind:blur="onnamebindblur" input-class="fieldclass" />
+    </view>
+  </view>
+  <view class="blank "></view>
+  <view class="inputclass">
+    <view wx:if="{{number}}">
+      <van-field size="large" value="{{currentnumber}}" clearable label="学号" placeholder="{{number}} " border="{{ ture }} " bind:blur="onnumbindblur" input-class="fieldclass" />
+    </view>
+    <view wx:else>
+      <van-field size="large " value="{{currentnumber}}" clearable label="学号 " placeholder="请输入学号" border="{{ ture }}" bind:blur="onnumbindblur" input-class="fieldclass" />
+    </view>
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker bindchange="idBindPickerChange" value="{{idIndex}}" range="{{idArray}}">
+      <view class="picker">
+        <view class="title">身份</view>
+        <view wx:if="{{identity}}">
+          <view wx:if="{{isidchange}}" class="changedvalue">{{idArray[idIndex]}}</view>
+          <view wx:else class="value">{{idArray[idIndex]}}</view>
+        </view>
+        <view wx:else>
+          <text class="value">请选择身份</text>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker mode="multiSelector" bindchange="bindMultiPickerChange" bindcolumnchange="bindMultiPickerColumnChange" value="{{multiIndex}}" range="{{multiArray}}">
+      <view class="picker">
+        <view class="title">学校</view>
+        <view wx:if="{{!ischooseschool}}" class="value">请选择学校</view>
+        <view wx:else>
+          <view class="changedvalue" wx:if="{{isschoolchange}}">{{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}-{{multiArray[2][multiIndex[2]]}}</view>
+          <view class="value" wx:else>{{multiArray[0][multiIndex[0]]}}-{{multiArray[1][multiIndex[1]]}}-{{multiArray[2][multiIndex[2]]}}</view>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="blank"></view>
+  <view class="inputclass">
+    <view wx:if="{{major}}">
+      <van-field size="large" value="{{currentmajor}}" clearable label="专业" placeholder="{{major}}" border="{{ ture }}" bind:blur="onmajorbindblur" input-class="fieldclass" />
+    </view>
+    <view wx:else>
+      <van-field size="large" value="{{currentmajor}}" clearable label="专业" placeholder="请输入专业" border="{{ ture }}" bind:blur="onmajorbindblur" input-class="fieldclass" />
+    </view>
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker bindchange="clBindPickerChange" value="{{clIndex}}" range="{{clArray}}">
+      <view class="picker">
+        <view class="title">班级</view>
+        <view wx:if="{{classnumber}}">
+          <view wx:if="{{isclasschange}}">
+            <text class="changedvalue">{{clArray[clIndex]}}</text>
+          </view>
+          <view wx:else>
+            <text class="value">{{clArray[clIndex]}}</text>
+          </view>
+        </view>
+        <view wx:else>
+          <text class="value">请选择班级</text>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="button">
+    <van-button size="large" bind:click="clicksave" type="primary">保存</van-button>
+  </view>
+</view>

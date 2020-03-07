@@ -1,0 +1,148 @@
+/* pages/class/class.wxss */
+@import "../component/component.wxss";
+page
+{
+  background-color: #F2F3F5;
+}
+.all
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.inandout
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.kejiancon
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 50rpx;
+  border: 1px solid white;
+  width: 650rpx;
+  height: 200rpx;
+  border-radius: 20px;
+  background-color: white;
+  /* box-shadow: 2px 2px 2px 1px #999999; */
+}
+.classcon
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  border: 1px solid white;
+  width: 650rpx;
+  height: 200rpx;
+  border-radius: 20px;
+  background-color: white;
+  /* box-shadow: 2px 2px 4px 1px #888888; */
+}
+.rankcon
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 20rpx;
+  border: 1px solid white;
+  width: 650rpx;
+  height: 200rpx;
+  border-radius: 20px;
+  background-color: white;
+  /* box-shadow: 2px 2px 2px 1px #999999; */
+}
+.incon
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20rpx;
+    border: 1px solid white;
+    width: 315rpx;
+    height: 180rpx;
+    border-radius: 20px;
+    background-color: white;
+    /* box-shadow: 2px 2px 4px 1px #888888; */
+}
+.outcon
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 20rpx;
+    margin-left: 20rpx;
+    border: 1px solid white;
+    width: 315rpx;
+    height: 180rpx;
+    border-radius: 20px; 
+    background-color: white;
+    /* box-shadow: 2px 2px 4px 1px #888888; */
+}
+.kejianimage
+{
+  height: 120rpx;
+  width: 120rpx;
+  margin-left: 150rpx;
+  margin-right: 120rpx;
+}
+.classimage
+{
+  height: 120rpx;
+  width: 120rpx;
+  margin-left: 150rpx;
+  margin-right: 120rpx;
+}
+.rankimage
+{
+  height: 160rpx;
+  width: 160rpx;
+  margin-left: 140rpx;
+  margin-right: 110rpx;
+}
+.inimage{
+  height: 120rpx;
+  width: 120rpx;
+  margin-left:40rpx;
+  margin-right: 30rpx;
+}
+.outimage
+{
+  height: 140rpx;
+  width: 150rpx;
+  margin-left: 15rpx;
+}
+.textclass
+{
+  font-size: 22px;
+}
+.shadow-l
+{
+  width: 650rpx;
+  height: 200rpx;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  filter: blur(3px) brightness(80%) opacity(0.8);
+  margin-top: 5rpx;
+  background-color: black;
+}
+.shadow-s
+{
+  width: 315rpx;
+  height: 180rpx;
+  border-radius: 20px;
+  position: absolute;
+  z-index: -1;
+  filter: blur(3px) brightness(80%) opacity(0.8);
+  margin-top: 5rpx;
+  background-color: black;
+}
+.input
+{
+  margin-left: -25rpx;
+  margin-top: 30rpx;
+}

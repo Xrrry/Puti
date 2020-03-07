@@ -1,0 +1,19 @@
+<!--pages/fans/fans.wxml-->
+<view wx:if="{{usernum}}">
+  <block wx:for="{{userdetail}}">
+    <view data-gid='{{item}}' bindtap='binduser'>
+      <view class="con">
+        <image class="imageclass" src='{{item.headurl}}'></image>
+        <view class="shadow">
+          <image class="shadowclass" src="{{item.headurl}}"></image>
+        </view>
+        <view class="titlecon">
+          <text class="titleclass">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="noneclass" wx:else>
+  <text class="nonetext">暂无粉丝</text>
+</view>

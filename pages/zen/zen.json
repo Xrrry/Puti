@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "菩提课堂",
+  "usingComponents": {
+    "van-button": "../../vant/button/index",
+    "van-notify": "../../vant/notify/index"
+  },
+  "disableScroll": true,
+  "navigationBarBackgroundColor": "#F4F3A1"
+}

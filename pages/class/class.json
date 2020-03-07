@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "课堂",
+  "usingComponents": {
+    "van-icon": "../../vant/icon/index",
+    "van-notify": "../../vant/notify/index",
+    "paySix": "../component/component"
+  },
+  "navigationBarBackgroundColor": "#F2F3F5"
+}

@@ -1,0 +1,56 @@
+<!--pages/addclass/addclass.wxml-->
+<view>
+  <van-notify id="custom-selector" />
+  <view class="inputclass">
+    <van-field size="large" value="{{currentname}}" clearable label="课程名称" placeholder="请输入课程名称" border="{{ ture }} " bind:blur="onnamebindblur" input-class="fieldclass" bind:clear="onclear" />
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker bindchange="clBindPickerChange" value="{{clIndex}}" range="{{clArray}}">
+      <view class="picker">
+        <view class="title">班级</view>
+        <view wx:if="{{classnumber}}">
+          <text class="changedvalue">{{clArray[clIndex]}}</text>
+        </view>
+        <view wx:else>
+          <text class="value">请选择班级</text>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker bindchange="weBindPickerChange" value="{{weIndex}}" range="{{weArray}}">
+      <view class="picker">
+        <view class="title">星期</view>
+        <view wx:if="{{weeknumber}}">
+            <text class="changedvalue">{{weArray[weIndex]}}</text>
+        </view>
+        <view wx:else>
+          <text class="value">请选择星期</text>
+        </view>
+      </view>
+    </picker>
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker mode="time" value="{{starttime}}" start="00:00" end="23:59" bindchange="bindStartTimeChange">
+      <view class="picker">
+        <view class="title">上课时间</view>
+        {{starttime}}
+      </view>
+    </picker>
+  </view>
+  <view class="blank"></view>
+  <view class="section">
+    <picker mode="time" value="{{endtime}}" start="00:00" end="23:59" bindchange="bindEndTimeChange">
+      <view class="picker">
+        <view class="title">下课时间</view>
+        {{endtime}}
+      </view>
+    </picker>
+  </view>
+  <view class="button">
+    <van-button size="large" bind:click="clicksave" type="primary">添加课程</van-button>
+  </view>
+</view>

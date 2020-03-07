@@ -1,0 +1,179 @@
+{
+	"description": "项目配置文件",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true,
+		"autoAudits": false
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.7.0",
+	"appid": "wx00cc8c942f9a6074",
+	"projectname": "miniprogram-test-1",
+	"debugOptions": {
+		"hidedInDevtools": []
+	},
+	"isGameTourist": false,
+	"simulatorType": "wechat",
+	"simulatorPluginLibVersion": {},
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 18,
+			"list": [
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "class",
+					"pathName": "pages/class/class",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "editinfo",
+					"pathName": "pages/editinfo/editinfo",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": 4,
+					"name": "service",
+					"pathName": "pages/service/service",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "about",
+					"pathName": "pages/about/about",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "developer",
+					"pathName": "pages/developer/developer",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "ppt",
+					"pathName": "pages/ppt/ppt",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "growthrecord",
+					"pathName": "pages/growthrecord/growthrecord",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "manageclass",
+					"pathName": "pages/manageclass/manageclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "mytree",
+					"pathName": "pages/mytree/mytree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "rankinglist",
+					"pathName": "pages/rankinglist/rankinglist",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "filesearch",
+					"pathName": "pages/filesearch/filesearch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "friends",
+					"pathName": "pages/friends/friends",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "friendssearch",
+					"pathName": "pages/friendssearch/friendssearch",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "friendstree",
+					"pathName": "pages/friendstree/friendstree",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "manageclass",
+					"pathName": "pages/manageclass/manageclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "help",
+					"pathName": "pages/help/help",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "addclass",
+					"pathName": "pages/addclass/addclass",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "in",
+					"pathName": "pages/in/in",
+					"scene": null
+				}
+			]
+		}
+	}
+}

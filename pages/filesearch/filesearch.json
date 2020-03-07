@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "文件搜索",
+  "usingComponents": {
+    "van-search": "../../vant/search/index"
+  },
+  "navigationBarBackgroundColor": "#F2F3F5"
+}

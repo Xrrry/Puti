@@ -1,0 +1,24 @@
+/* pages/service/service.wxss */
+page
+{
+  background-color: #F2F3F5;
+}
+.message
+{
+  margin-top: 80rpx;
+}
+.blank
+{
+  height: 30rpx;
+}
+.button
+{
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.con
+{
+  width: 700rpx;
+  margin-left: 26rpx;
+}

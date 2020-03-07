@@ -1,0 +1,20 @@
+<!--pages/friendssearch/friendssearch.wxml-->
+<van-search value="{{ value }}" placeholder="请输入用户学号" shape="round" use-action-slot bind:change="onchange" bind:search="onSearch" focus>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<view wx:if="{{resultnum}}">
+  <block wx:for="{{searchresult}}">
+    <view data-gid='{{item}}' bindtap='binduser'>
+      <view class="con">
+        <image class="imageclass" src='{{item.headurl}}'></image>
+        <view class="shadow">
+          <image class="shadowclass" src="{{item.headurl}}"></image>
+        </view>
+        <view class="titlecon">
+          <text class="titleclass">{{item.name}}</text>
+          <text class="titlenumber">{{item.number}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>

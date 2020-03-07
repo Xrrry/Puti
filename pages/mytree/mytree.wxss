@@ -1,0 +1,58 @@
+/* pages/mytree/mytree.wxss */
+.backgroundimage {
+  position: absolute;
+  z-index: -3;
+  width: 100%;
+  height: 100%;
+}
+.backgroundimage1 {
+  position: absolute;
+  z-index: -4;
+  width: 100%;
+  height: 100%;
+}
+.backgroundimage2 {
+  position: absolute;
+  z-index: -2;
+  width: 100%;
+  height: 100%;
+}
+.backgroundimage3 {
+  position: absolute;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.text
+{
+  margin: 30rpx;
+  color: white;
+}
+.textcon
+{
+  float: right;
+  border-radius: 50rpx;
+  background-color: #56A387;
+  margin-right: 50rpx;
+  margin-top: 70rpx;
+}
+.headimage {
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.con
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  position: absolute;
+  z-index: 1;
+  margin-top: 45rpx;
+  margin-left: 50rpx;
+}
+.name
+{
+  margin-left: 40rpx;
+  font-size: 18px;
+}

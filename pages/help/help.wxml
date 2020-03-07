@@ -1,0 +1,59 @@
+<!--pages/help/help.wxml-->
+<view class="con">
+  <text class="title">一、产品简介</text>
+  <text class="textnoweight">本程序是结合学习和抗干扰功能为一体的课堂辅助工具。分为教师和学生两大板块，选择不同的身份功能有所不同。</text>
+  <text class="text">板块介绍:</text>
+  <image class="image" mode="widthFix" src='{{headFilePath1}}'></image>
+  <text class="textnoweight">如上图所示，小程序分为"禅"、课堂和我的三大页面。</text>
+  <text class="textnoweight">其中"禅"页面为计时模块，可以达到避免手机干扰的效果(内容会在下方展示)。</text>
+  <text class="textnoweight">"课堂"页面包含课件共享、课程管理、签到和排行榜(关于成长值的排列)的功能。学生端的课堂管理仅可查看本班课程基本信息，教师端则增加添加课程的功能</text>
+  <text class="textnoweight">"我的"页面则具有编辑资料、查看个人成长记录、查看个人以及他人主页等交互功能</text>
+  <text class="title">二、使用与操作指南</text>
+  <text class="text">1.编辑资料</text>
+  <text class="textnotop">首次打开使用该小程序时，需要获取您的微信头像等个人信息。为了方便管理以及您与其他同学和老师的交互，在您授权后程序会要求您及时到"我的"页面的"编辑资料"中完善个人信息，包括姓名、学号、身份(仅有教师和学生，其中教师身份需要认证)、学校、专业和班级。</text>
+  <text class="text">2.课程添加</text>
+  <text class="textnotop">信息完善之后，教师需要添加所授课程的基本信息，该功能位于 课堂->课程管理页面的右上角"+" 位置。(学生端没有这个标识)课程添加的详情页面如下图所示，需要注意的是，班级的选择只能是一个(所以如果是多个班级则需要一个一个添加，会带来不便，今后将做改善)。</text>
+  <image class="image" mode="widthFix" src='{{headFilePath2}}'></image>
+  <text class="text">3.查看课程</text>
+  <text class="textnotop">在完善课程信息并点击下方的"添加课程"按钮之后，返回上一界面就会看到涵盖课程简要信息的卡片，包括课程名称、上课时间、教师姓名及其头像等信息。本课程老师可长按删除该课程。</text>
+  <image class="image" mode="widthFix" src='{{headFilePath3}}'></image>
+  <text class="text">4.核心功能——"禅"</text>
+  <text class="textnotop">课程添加之后，即可使用特色板块——"禅"模式，点击"禅"页面的"开始计时"按钮进入计时状态，需要注意的是，在点击"开始计时"按钮后会自动检测当前时间是否在课程范围时间之内，如果不在范围内就会弹出一条消息:"不在课程范围之内，无法开始计时"，否则开始正常计时，如下图所示。</text>
+  <image class="image" mode="widthFix" src='{{headFilePath4}}'></image>
+  <text class="textnoweight">注:"禅"页面的背景是根据您当前的成长值来设置的，共有七个形态(这七个形态需要您慢慢探索)。为避免误触而导致的计时突然结束，我们把按钮设置为长按终止，时间大约三秒钟，效果不再演示。</text>
+  <image class="image" mode="widthFix" src='{{headFilePath5}}'></image>
+  <text class="textnoweight">成长值获取规则:计时期间，如果把小程序切到后台就会赢得与切出时长相等的罚时"奖励"(手机处于息屏状态则不受影响)，而只有有效计时时长达到本节课程时长的80%才会认定为有效，比如一节课的起止时间分别为8:00和9:40，共100分钟，那么你的单次计时时长需要达到80分钟才会被记录并上传。有效时长在计时结束后会转化为成长值，规则为一分钟对应一点成长值。</text>
+  <text class="text">5.课件共享</text>
+  <text class="textnotop">该板块会以列表的形式展示所有上传到本班的课件，不同后缀的文件拥有不同的图标(注意，目前文件格式仅支持doc,docx,xls,xlsx,ppt,pptx和pdf)。</text>
+  <text class="text">页面列表右上角为搜索功能，可在列表中搜索特定的文件，左上角为上传文件的功能，教师和学生均可使用。</text>
+  <text class="text">上传课件的功能由于小程序的限制，操作过程较为繁琐，步骤如下:</text>
+  <text class="textnotop">(1)首先把要上传的文件发送给您的任意一位好友</text>
+  <text class="textnotop">(2)回到该页面，点击左上角的上传按钮，将会打开微信分享的列表，选择您刚才发送文件的好友</text>
+  <text class="textnotop">(3)点击进入会话，勾选文件上传即可。</text>
+  <text class="text">6.签到</text>
+  <text class="textnotop">教师身份与学生身份界面不同。教师在输入六位数的密码(必须为六位)后，勾选需要签到班级(由于是复选框，所以能选择多个班级)填写完成后发起签到即可。而学生需要在发起签到的一分钟内点击签到按钮并输入密码，密码输入完毕后自动提交，经验证后成功的将成功信息(实际为学生的头像)反馈给教师。</text>
+  <image class="image" mode="widthFix" src='{{headFilePath6}}'></image>
+  <image class="image" mode="widthFix" src='{{headFilePath7}}'></image>
+  <text class="text">7.排行榜</text>
+  <text class="textnotop">排行榜是对个人成长值排名的公示，分为总排行、校内排行和班内排行，样例如下:
+</text>
+<image class="image" mode="widthFix" src='{{headFilePath8}}'></image>
+  <text class="text">8.关注和粉丝</text>
+  <text class="textnotop">粉丝和关注是两个单方向的概念，互不影响。二者均以列表的形式展示用户的头像和姓名。点击对象单元的任意位置即可进入对方个人主页。页面内显示其成长值和菩提的状态，心形标志则代表你是否关注了他/她，再次点击会取消关注并给出提示信息，反之亦然。
+</text>
+  <text class="text">9.成长值(个人主页)</text>
+  <text class="textnotop">个人主页与他人主页并无不同，唯一区别是拥有个人当前等级的进度条。初始等级默认为1，之后每获得一定成长值之后可提升一级(之所以说一定成长值是因为等级的划分是根据您当前所能获得的最大成长值来确定七个等级的，由于不同班级的上课总时长不同，其所能获得的最大成长值亦不同)</text>
+  <text class="text">10.成长记录</text>
+  <text class="textnotop">您的每一次有效的成长值获取记录都会显示在该页面中，包含日期、起止时间、时长和获取的成长值大小(测试阶段每十秒获得一点成长值，真实情况下为一分钟一点成长值)。
+</text>
+  <text class="text">11.联系我们</text>
+  <text class="textnotop">如果您对我们小程序有什么建议，或者您在使用过程中发现了什么问题，您可以通过该版块向我们反馈，我们在收到消息之后会竭力处理。
+</text>
+  <text class="title">三、常见问题</text>
+  <text class="text">1.为什么我在息屏状态下也会扣除罚时？</text>
+  <text class="textnotop">由于小程序没有检测息屏的API可以调用，我们采用比较极端的检测方法，这可能会有很高的错误发生率，如发生该情况，您可向我们反映，我们将尽力优化。</text>
+  <text class="text">2.为什么我计时了但没有获取成长值？</text>
+  <text class="textnotop">请参考成长值的获取规则，您必须达到上课时长的80%才会视为有效。</text>
+  <text class="text">3.为什么我等级已经满级还上不了排行榜？</text>
+  <text class="textnotop">这种情况是您所学课时时长过少造成的。如之前所言，排行榜是对成长值排行的公示，成长值的多少代表着您已坚持时长的多少，所以说成长值越大，您的付出也就越多，我们不能辜负那些课时多还能努力学习的同学，因此我们不能以等级作为区分。</text>
+</view>

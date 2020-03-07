@@ -1,0 +1,60 @@
+<!--pages/zen/zen.wxml-->
+<van-notify id="custom-selector" />
+<image class="backgroundimage" mode="aspectFill" src='{{treefilepath}}' animation="{{animation9}}" />
+<image class="backgroundimageblur" mode="aspectFill" src='{{treefilepath}}' animation="{{animation10}}" />
+<image class="starttextimage" mode="widthFix" src='/images/text/starttext.png' animation="{{animation11}}" />
+<image class="timingtextimage" mode="widthFix" src='{{timingimagesrc}}' animation="{{animation12}}" />
+<!-- <view>
+  <text class="textcon">
+    <text class="valuetext">成长值：{{growthvalue}}</text>
+  </text>
+</view> -->
+<view>
+  <!-- <view class="startbutton" bindtap='rotateAndScale' animation="{{animation2}}">
+  </view>
+  <view class="endbutton" bindtap="reset" animation="{{animation4}}">
+  </view> -->
+  <view class="buttons">
+    <view class="button-s" bindtap='rotateAndScale' animation="{{animation2}}">
+      <view class="text-s">开始计时</view>
+    </view>
+    <view class="progress_bg" animation="{{animation13}}">
+      <canvas class="canvas" canvas-id="canvasProgressbg"></canvas>
+    </view>
+    <view class="button-e" animation="{{animation4}}" bindtouchstart='onstart' bindtouchend='onend' bindtouchcancel='oncancel'>
+      <view class="text-e">长按终止</view>
+    </view>
+  </view>
+  <view class="ima1" animation="{{animation}}">
+    <image class="image1" src='/images/wheel3.png' />
+  </view>
+  <view class="ima3" animation="{{animation5}}">
+    <image class="image3" src='/images/circle1.png' />
+  </view>
+  <view class="ima4" animation="{{animation6}}">
+    <image class="image3" src='/images/circle1.png' />
+  </view>
+  <view class="ima5" animation="{{animation7}}">
+    <image class="image3" src='/images/circle1.png' />
+  </view>
+  <view class="ima6" animation="{{animation8}}">
+    <image class="image3" src='/images/circle2.png' />
+  </view>
+  <view class="ima2" animation="{{animation1}}">
+    <image class="image2" src='/images/arrow3.jpg' />
+  </view>
+  <view class="text" animation="{{animation3}}">
+    <view wx:if="{{sectime < 10 && mintime < 10}}">
+      <text class="textclass">0{{mintime}}:0{{sectime}}</text>
+    </view>
+    <view wx:if="{{sectime >= 10 && mintime < 10}}">
+      <text class="textclass">0{{mintime}}:{{sectime}}</text>
+    </view>
+    <view wx:if="{{sectime < 10 && mintime >= 10}}">
+      <text class="textclass">{{mintime}}:0{{sectime}}</text>
+    </view>
+    <view wx:if="{{sectime >= 10 && mintime >= 10}}">
+      <text class="textclass">{{mintime}}:{{sectime}}</text>
+    </view>
+  </view>
+</view>

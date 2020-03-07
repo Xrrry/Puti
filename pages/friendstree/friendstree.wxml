@@ -1,0 +1,17 @@
+<!--pages/friendstree/friendstree.wxml-->
+<image class="backgroundimage" mode="aspectFill" src='{{treefilepath}}' animation="{{animation}}" />
+<view class="con">
+  <image class="headimage" src='{{currentuser.headurl}}' />
+  <text class="name">{{currentuser.name}}</text>
+</view>
+<view class="valuecon">
+  <text class="textcon">
+    <text class="text">成长值：{{currentuser.growthvalue}}</text>
+  </text>
+</view>
+<block wx:if="{{checked}}">
+  <image class="followed" src='/images/followed.png' bindtap='bindunfollow' />
+</block>
+<block wx:else>
+  <image class="follow" src='/images/follow.png' bindtap='bindtofollow' />
+</block>

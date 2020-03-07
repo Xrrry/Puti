@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "课件共享",
+  "usingComponents": {
+    "van-card": "../../vant/card/index",
+    "van-nav-bar": "../../vant/nav-bar/index",
+    "van-icon": "../../vant/icon/index"
+  },
+  "enablePullDownRefresh": true
+}

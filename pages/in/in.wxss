@@ -1,0 +1,81 @@
+/* pages/in/in.wxss */
+page
+{
+  background-color: #F2F3F5;
+}
+.inputclass
+{
+  width: 700rpx;
+  margin-left: 26rpx;
+}
+.fieldclass
+{
+  font-size: 15px;
+}
+.out
+{
+  width: 700rpx;
+  height: 112rpx;
+  margin-left: 26rpx;
+  border-radius: 20rpx;
+  margin-top: 20rpx;
+}
+.in
+{
+  width: 640rpx;
+  border-radius: 20rpx;
+  margin-top: 10rpx;
+}
+.text
+{
+  font-size: 15px;
+  margin-left: 20rpx;
+}
+.test
+{
+  height: 60rpx;
+}
+.test1
+{
+  margin-top: 20rpx;
+}
+.barclass
+{
+  width: 700rpx;
+  border-radius: 20rpx;
+  margin-left: 26rpx;
+  margin-bottom: 20rpx;
+}
+.student
+{
+  width: 700rpx;
+  height: auto;
+  border-radius: 20rpx;
+  margin-left: 26rpx;
+  background-color: white;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.usercon
+{
+  width: 125rpx;
+  height: 170rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: 40rpx;
+  padding-top: 30rpx;
+}
+.head
+{
+  width: 100rpx;
+  height: 100rpx;
+  border-radius: 50%;
+}
+.name
+{
+  font-size: 12px;
+  margin-top: 20rpx;
+}

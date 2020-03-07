@@ -1,0 +1,29 @@
+<!--pages/growthrecord/growthrecord.wxml-->
+<view class="listcon">
+  <block wx:for="{{record}}">
+    <view data-gid='{{item}}'>
+      <view class="con">
+        <view class="con1">
+          <view wx:if="{{item.min<10 && item.sec<10}}">
+            <text class="wholetimetext">0{{item.min}}:0{{item.sec}}</text>
+          </view>
+          <view wx:if="{{item.min<10 && item.sec>=10}}">
+            <text class="wholetimetext">0{{item.min}}:{{item.sec}}</text>
+          </view>
+          <view wx:if="{{item.min>=10 && item.sec<10}}">
+            <text class="wholetimetext">{{item.min}}:0{{item.sec}}</text>
+          </view>
+          <view wx:if="{{item.min>=10 && item.sec>=10}}">
+            <text class="wholetimetext">{{item.min}}:{{item.sec}}</text>
+          </view>
+          <text class="timetext">{{item.day}}</text>
+          <text class="timetext">{{item.starttimeshort}} - {{item.endtimeshort}}</text>
+        </view>
+        <view class="growthcon">
+          <text class="growthtext">+{{item.growth}}</text>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>

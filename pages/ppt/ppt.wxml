@@ -1,0 +1,49 @@
+<!--pages/ppt/ppt.wxml-->
+<view class="con2">
+  <view class="con1">
+    <view class="upload">
+      <image class="topimage" bindtap="bindupload" src='/images/upload.png' />
+    </view>
+    <view class="search">
+      <image class="topimage" bindtap="bindsearch" src='/images/search.png' />
+    </view>
+  </view>
+</view>
+<view wx:if="{{pptnum}}">
+  <block wx:for="{{ppt}}">
+    <view data-gid='{{item}}' bindtap='bindppt'>
+      <view class="opencon">
+        <image class="openimage" src='/images/open.png'></image>
+      </view>
+      <view class="con">
+        <view>
+          <block wx:if="{{item.filetype=='ppt'||item.filetype=='pptx'}}">
+            <image class="imageclass" src='/images/ppt.png'></image>
+          </block>
+          <block wx:elif="{{item.filetype=='doc'||item.filetype=='docx'}}">
+            <image class="imageclass" src='/images/word.png'></image>
+          </block>
+          <block wx:elif="{{item.filetype=='xls'||item.filetype=='xlsx'}}">
+            <image class="imageclass" src='/images/excel.png'></image>
+          </block>
+          <block wx:elif="{{item.filetype=='pdf'}}">
+            <image class="imageclass" src='/images/pdf.png'></image>
+          </block>
+          <!--       <block wx:elif="{{item.filetype=='MP4'||item.filetype=='mp4'||item.filetype=='flv'||item.filetype=='FLV'||item.filetype=='mov'||item.filetype=='MOV'||item.filetype=='AVI'||item.filetype=='avi'||item.filetype=='WMV'||item.filetype=='wmv'}}">
+        <image class="imageclass" src='/images/video.png'></image>
+      </block>
+      <block wx:else>
+        <image class="imageclass" src='/images/else.png'></image>
+      </block> -->
+        </view>
+        <view class="titlecon">
+          <text class="titleclass">{{item.filename}}</text>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>
+<view class="noneclass" wx:else>
+  <text class="nonetext">您所在班级暂无课件</text>
+</view>

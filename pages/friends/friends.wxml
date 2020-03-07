@@ -1,0 +1,24 @@
+<!--pages/friends/friends.wxml-->
+<view class="con1">
+  <view class="add">
+    <image class="topimage" bindtap="bindadd" src='/images/add.png' />
+  </view>
+</view>
+<view wx:if="{{usernum}}">
+  <block wx:for="{{userdetail}}">
+    <view data-gid='{{item}}' bindtap='binduser'>
+      <view class="con">
+        <image class="imageclass" src='{{item.headurl}}'></image>
+        <view class="shadow">
+          <image class="shadowclass" src="{{item.headurl}}"></image>
+        </view>
+        <view class="titlecon">
+          <text class="titleclass">{{item.name}}</text>
+        </view>
+      </view>
+    </view>
+  </block>
+</view>
+<view class="noneclass" wx:else>
+  <text class="nonetext">暂无关注</text>
+</view>

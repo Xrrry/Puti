@@ -1,0 +1,62 @@
+/* pages/addclass/addclass.wxss */
+page
+{
+  background-color: #F2F3F5;
+}
+.con
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section
+{
+  height: 112rpx;
+  width: 700rpx;
+  margin-left: 26rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.picker
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+  padding-left: 53rpx;
+  padding-top: 32rpx;
+}
+.blank
+{
+  height: 20rpx;
+  width: 100%;
+}
+.inputclass
+{
+  width: 700rpx;
+  margin-left: 26rpx;
+}
+.title
+{
+  margin-right: 105rpx;
+}
+.value
+{
+  font-size: 15px;
+  color: #999999;
+}
+.button
+{
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.changedvalue
+{
+  font-size: 15px;
+  color: black;
+}
+.fieldclass
+{
+  font-size: 15px;
+}

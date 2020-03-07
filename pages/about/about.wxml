@@ -1,0 +1,21 @@
+<!--pages/about/about.wxml-->
+<view class="con">
+  <view class="iconcon">
+  <view class="shadow"><image class="appicon" src='/images/appicon.jpg'></image></view>
+    <image class="appicon" src='/images/appicon.jpg'></image>
+  </view>
+  <view>
+    <text class="nametext">菩提课堂</text>
+  </view>
+  <view>
+    <text class="versiontext">Version 1.0.4</text>
+  </view>
+</view>
+<view>
+<view class="blank"></view>
+  <van-cell-group custom-class="groupclass">
+    <van-cell title-class="titleclass" title="功能介绍" is-link size="large" url='/pages/help/help'/>
+    <van-cell title-class="titleclass" title="建议与意见" is-link size="large" url='/pages/service/service'/>
+    <van-cell title-class="titleclass" title="开发人员" is-link size="large" url='/pages/developer/developer'/>
+  </van-cell-group>
+</view>

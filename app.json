@@ -1,0 +1,59 @@
+{
+  "pages": [
+    "pages/zen/zen",
+    "pages/my/my",
+    "pages/class/class",
+    "pages/editinfo/editinfo",
+    "pages/growthrecord/growthrecord",
+    "pages/about/about",
+    "pages/help/help",
+    "pages/service/service",
+    "pages/friends/friends",
+    "pages/mytree/mytree",
+    "pages/developer/developer",
+    "pages/ppt/ppt",
+    "pages/manageclass/manageclass",
+    "pages/friendstree/friendstree",
+    "pages/rankinglist/rankinglist",
+    "pages/filesearch/filesearch",
+    "pages/friendssearch/friendssearch",
+    "pages/fans/fans",
+    "pages/addclass/addclass",
+    "pages/in/in",
+    "pages/component/component",
+    "pages/index/index"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTitleText": "菩提课堂",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "color": "#999999",
+    "selectedColor": "#000000",
+    "borderStyle": "black",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/zen/zen",
+        "text": "禅",
+        "iconPath": "images/icon/home.png",
+        "selectedIconPath": "images/icon/home-o.png"
+      },
+      {
+        "pagePath": "pages/class/class",
+        "text": "课堂",
+        "iconPath": "images/icon/class.png",
+        "selectedIconPath": "images/icon/class-o.png"
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "iconPath": "images/icon/friends.png",
+        "selectedIconPath": "images/icon/friends-o.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
+}

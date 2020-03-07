@@ -1,0 +1,33 @@
+<!--pages/filesearch/filesearch.wxml-->
+<van-search value="{{ value }}" placeholder="请输入文件关键词" shape="round" use-action-slot bind:change="onchange" bind:search="onSearch" focus>
+  <view slot="action" bind:tap="onSearch">搜索</view>
+</van-search>
+<view wx:if="{{filenum}}">
+  <block wx:for="{{file}}">
+    <view data-gid='{{item}}' bindtap='bindfile'>
+      <view class="opencon">
+        <image class="openimage" src='/images/open.png'></image>
+      </view>
+      <view class="con">
+        <view>
+          <block wx:if="{{item.filetype=='ppt'||item.filetype=='pptx'}}">
+            <image class="imageclass" src='/images/ppt.png'></image>
+          </block>
+          <block wx:elif="{{item.filetype=='doc'||item.filetype=='docx'}}">
+            <image class="imageclass" src='/images/word.png'></image>
+          </block>
+          <block wx:elif="{{item.filetype=='xls'||item.filetype=='xlsx'}}">
+            <image class="imageclass" src='/images/excel.png'></image>
+          </block>
+          <block wx:elif="{{item.filetype=='pdf'}}">
+            <image class="imageclass" src='/images/pdf.png'></image>
+          </block>
+        </view>
+        <view class="titlecon">
+          <text class="titleclass">{{item.filename}}</text>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>

@@ -1,0 +1,27 @@
+<!--pages/in/in.wxml-->
+<van-notify id="custom-selector" />
+<van-nav-bar title="" left-text="取消" right-text="发起签到" bind:click-left="onClickLeft" bind:click-right="onClickRight" custom-class="barclass" />
+<view class="inputclass">
+  <van-field size="large" value="{{password}}" clearable label="密码" placeholder="请输入六位数密码发起签到" border="{{ ture }} " bind:blur="onpasswordbindblur" input-class="fieldclass" bind:clear="onclear" />
+</view>
+<van-collapse value="{{ activeNames }}" bind:change="onChange1" custom-class="out" border="{{flase}}">
+  <van-collapse-item title="选择班级" name="1" content-class="in">
+    <van-checkbox-group value="{{ result }}" bind:change="onChange2">
+      <van-checkbox wx:for="{{ list }}" wx:key="index" name="{{ item }}">
+        <view class="test">
+          <view class="test1">
+            <text class="text">{{ item }}班</text>
+          </view>
+        </view>
+      </van-checkbox>
+    </van-checkbox-group>
+  </van-collapse-item>
+</van-collapse>
+<view class="student">
+  <block wx:for="{{user}}">
+    <view class="usercon" data-gid='{{item}}' bindtap='binduser'>
+      <image class="head" src='{{item.headurl}}' />
+      <text class="name">{{item.name}}</text>
+    </view>
+  </block>
+</view>

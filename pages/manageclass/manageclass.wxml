@@ -1,0 +1,27 @@
+<!--pages/manageclass/manageclass.wxml-->
+<!-- 课程名称 老师名称 头像 起止时间 周几-->
+<block wx:if="{{identity=='教师'}}">
+  <view class="con5">
+    <view class="add">
+      <image class="topimage" bindtap="bindadd" src='/images/add.png' />
+    </view>
+  </view>
+</block>
+<view wx:if="{{classs.length}}">
+  <view class="con1" wx:for="{{classs}}">
+    <view class="con2" bindlongpress='todelete' data-gid='{{item}}'>
+      <view class="con3">
+        <text class="classname">{{item.classname}}</text>
+        <text class="weektext">{{item.weektext}}</text>
+        <text class="time">{{item.starttime}}-{{item.endtime}}</text>
+      </view>
+      <view class="con4">
+        <image class="teacherhead" src='{{item.teacherurl}}' />
+        <text class="teachername">{{item.teachername}}</text>
+      </view>
+    </view>
+  </view>
+</view>
+<view wx:else>
+  <text class="nonetext">暂无课程</text>
+</view>

@@ -1,0 +1,31 @@
+<!--pages/rankinglist/rankinglist.wxml-->
+<van-tabs active="{{ active }}" bind:click="onClick">
+  <van-tab title="总排行"></van-tab>
+  <van-tab title="学校排行"></van-tab>
+  <van-tab title="本班排行"></van-tab>
+</van-tabs>
+<view wx:if="{{usernum}}">
+  <block wx:for="{{user}}">
+    <view data-gid='{{item}}' bindtap='binduser'>
+      <view class="con">
+        <view class="shadow">
+          <image class="imageclasss" src="{{item.headurl}}"></image>
+        </view>
+        <view class="numberclass">
+          <text class="numbertext">{{index+1}}</text>
+        </view>
+        <image class="imageclass" src='{{item.headurl}}'></image>
+        <view class="titlecon">
+          <text class="titleclass">{{item.name}}</text>
+        </view>
+        <view class="valuecon">
+          <text class="valueclass">{{item.growthvalue}}</text>
+        </view>
+      </view>
+      <view class="line"></view>
+    </view>
+  </block>
+</view>
+<view class="noneclass" wx:else>
+  <text class="nonetext">暂无用户</text>
+</view>

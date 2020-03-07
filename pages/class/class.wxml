@@ -1,0 +1,41 @@
+<!--pages/class/class.wxml-->
+<van-notify id="custom-selector" />
+<modal hidden="{{hiddenmodalput}}" title="请输入密码" confirm-text="签到" cancel-text="取消" bindcancel="cancel" bindconfirm="confirm">  
+  <view class="input"><paySix 
+  bindvalueSix="valueSix" 
+  input_value="{{inputData.input_value}}" 
+  value_length="{{inputData.value_length}}" 
+  isNext="{{inputData.isNext}}" 
+  get_focus="{{inputData.get_focus}}" 
+  focus_class="{{inputData.focus_class}}" 
+  value_num="{{inputData.value_num}}"
+  height="{{inputData.height}}" 
+  width="{{inputData.width}}" 
+  see="{{inputData.see}}" 
+  interval="{{inputData.interval}}">
+  </paySix></view>
+</modal>
+<view class="all">
+  <view class="kejiancon" bindtap='onpptbind'>
+    <view class="shadow-l"></view>
+    <image class="kejianimage" src='/images/icon/ppt.png'></image>
+    <text class="textclass">课件共享</text>
+  </view>
+  <view class="classcon" bindtap='onclassbind'>
+  <view class="shadow-l"></view>
+    <image class="classimage" src='/images/icon/classs.png'></image>
+    <text class="textclass">课程管理</text>
+  </view>
+  <view class="inandout">
+    <view class="incon" bindtap='oninbind'>
+    <view class="shadow-s"></view>
+    <image class="inimage" src='/images/icon/in.png' ></image>
+      <text class="textclass">签到</text>
+    </view>
+    <view class="outcon" bindtap='onrankbind'>
+    <view class="shadow-s"></view>
+    <image class="outimage" src='/images/icon/rank-o.png' ></image>
+      <text class="textclass">排行榜</text>
+    </view>
+  </view>
+</view>

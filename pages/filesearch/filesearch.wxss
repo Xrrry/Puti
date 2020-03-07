@@ -1,0 +1,55 @@
+/* pages/filesearch/filesearch.wxss */
+
+.titleclass {
+  font-size: 13px;
+}
+
+.con {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.line {
+  height: 0rpx;
+  width: 680rpx;
+  border-bottom: solid 1rpx #eee;
+  border-top: solid 1rpx #eee;
+  margin-left: 35rpx;
+}
+
+.imageclass {
+  height: 100rpx;
+  width: 100rpx;
+  margin: 30rpx;
+}
+
+.opencon {
+  position: absolute;
+  z-index: 1;
+  margin-top: 70rpx;
+  margin-left: 620rpx;
+}
+
+.openimage {
+  height: 50rpx;
+  width: 50rpx;
+}
+
+.titlecon {
+  width: 420rpx;
+  margin-right: 20rpx;
+  margin-left: 20rpx;
+}
+
+.con1 {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.con2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

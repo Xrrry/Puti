@@ -1,0 +1,79 @@
+/* pages/editinfo/editinfo.wxss */
+page
+{
+  background-color: #F2F3F5;
+}
+.con
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section
+{
+  height: 112rpx;
+  width: 700rpx;
+  margin-left: 26rpx;
+  background-color: white;
+  border-radius: 20rpx;
+}
+.picker
+{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  font-size: 17px;
+  padding-left: 58rpx;
+  padding-top: 32rpx;
+}
+.userinfo-avator
+{
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+.blank
+{
+  height: 20rpx;
+  width: 100%;
+}
+.inputclass
+{
+  width: 700rpx;
+  margin-left: 26rpx;
+}
+.title
+{
+  margin-right: 105rpx;
+}
+.value
+{
+  font-size: 15px;
+  color: #999999;
+}
+.button
+{
+  margin-top: 50rpx;
+  margin-left: 100rpx;
+  margin-right: 100rpx;
+}
+.transition
+{
+  height: 200rpx;
+  width: 200rpx;
+  z-index: 1;
+  position: absolute;
+  margin-top: 300rpx;
+  margin-left: 100rpx;
+  background-color: green;
+}
+.changedvalue
+{
+  font-size: 15px;
+  color: black;
+}
+.fieldclass
+{
+  font-size: 15px;
+}

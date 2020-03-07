@@ -1,0 +1,59 @@
+<!--pages/my/my.wxml-->
+<view class="container-1">
+  <view class="line"></view>
+  <view class="blank1"></view>
+  <view class="container-2">
+    <view class="userinfo">
+      <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo" class="button"><text class="buttontext">初次使用请授权登录</text></button>
+      <block wx:else>
+        <view class="shadow">
+          <image class="userinfo-avatar-s" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        </view>
+        <image bindtap="growthonTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" mode="cover"></image>
+        <view bindtap="growthonTap" class="name">
+          <text class="text1">{{name}}</text>
+        </view>
+      </block>
+    </view>
+  </view>
+  <view class="container-3">
+    <view class="followimagecon" bindtap="followonTap">
+      <image class="followimage" src="/images/icon/follow.png"></image>
+    </view>
+    <view class="followtext">
+      <text bindtap="followonTap" class="text">关注  {{followNum}}</text>
+    </view>
+    <view class="fansimagecon" bindtap="fansonTap">
+      <image class="fansimage" src="/images/icon/fans.png"></image>
+    </view>
+    <view class="fanstext">
+      <text bindtap="fansonTap" class="text">粉丝  {{fansNum}}</text>
+    </view>
+    <view class="growthimagecon" bindtap="growthonTap">
+      <image class="growthimage" src="/images/icon/award-o.png"></image>
+    </view>
+    <view class="growthValue">
+      <text bindtap="growthonTap" class="text">成长值  {{growthValue}}</text>
+    </view>
+  </view>
+</view>
+<view class="blank1"></view>
+<view class="blank1"></view>
+<view>
+  <view class="line1"></view>
+  <image class="icon" src="../../images/icon/icon/exercise.png"></image>
+  <van-cell icon="more" title="编辑资料" size="large" is-link border="{{ false }}" url='/pages/editinfo/editinfo' />
+  <view class="line1"></view>
+  <image class="icon" src="../../images/icon/icon/time.png"></image>
+  <van-cell icon="bars" title="成长记录" size="large" is-link border="{{ false }}" url='/pages/growthrecord/growthrecord' />
+  <view class="line1"></view>
+  <image class="icon" src="../../images/icon/icon/kefu.png"></image>
+  <van-cell icon="info" title="联系我们" size="large" is-link border="{{ false }}" url='/pages/service/service' />
+  <view class="line1"></view>
+  <image class="icon" src="../../images/icon/icon/help.png"></image>
+  <van-cell icon="info" title="帮助" size="large" is-link border="{{ false }}" url='/pages/help/help' />
+  <view class="line1"></view>
+  <image class="icon" src="../../images/icon/icon/us.png"></image>
+  <van-cell icon="info" title="关于我们" size="large" is-link border="{{ false }}" url='/pages/about/about' />
+  <view class="line1"></view>
+</view>

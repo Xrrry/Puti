@@ -1,0 +1,73 @@
+<!--pages/developer/developer.wxml-->
+<view class="con1">
+<view class="blank"></view>
+  <view class="title">开发人员</view>
+  <view class="line"></view>
+  <view class="con2">
+    <view class="headcon">
+    <view class="shadow"><image class="headimage" src="{{headFilePath1}}"></image></view>
+      <image class="headimage" src="{{headFilePath1}}"></image>
+    </view>
+    <view class="con3">
+      <text class="nametext">肖若寅</text>
+      <view class="textcon"><text class="positiontext">总体策划/前端及后端代码设计</text></view>
+    </view>
+  </view>
+  <view class="line1"></view>
+  <view class="con2">
+    <view class="headcon">
+    <view class="shadow"><image class="headimage" src="{{headFilePath2}}"></image></view>
+      <image class="headimage" src="{{headFilePath2}}"></image>
+    </view>
+    <view class="con3">
+      <text class="nametext">杨豪飞</text>
+      <view class="textcon"><text class="positiontext">前端及后端代码辅助设计</text></view>
+    </view>
+  </view>
+  <view class="line1"></view>
+  <view class="con2">
+    <view class="headcon">
+    <view class="shadow"><image class="headimage" src="{{headFilePath3}}"></image></view>
+      <image class="headimage" src="{{headFilePath3}}"></image>
+    </view>
+    <view class="con3">
+      <text class="nametext">樊辰睿</text>
+      <view class="textcon"><text class="positiontext">插画及UI设计</text></view>
+    </view>
+  </view>
+  <view class="line1"></view>
+  <view class="con2">
+    <view class="headcon">
+    <view class="shadow"><image class="headimage" src="{{headFilePath4}}"></image></view>
+      <image class="headimage" src="{{headFilePath4}}"></image>
+    </view>
+    <view class="con3">
+      <text class="nametext">杨俊祺</text>
+      <view class="textcon"><text class="positiontext">前端及后端代码辅助设计</text></view>
+    </view>
+  </view>
+  <view class="line1"></view>
+  <view class="con2">
+    <view class="headcon">
+    <view class="shadow"><image class="headimage" src="{{headFilePath5}}"></image></view>
+      <image class="headimage" src="{{headFilePath5}}"></image>
+    </view>
+    <view class="con3">
+      <text class="nametext">高子昂</text>
+      <view class="textcon"><text class="positiontext">创意设计</text></view>
+    </view>
+  </view>
+  <view class="blank"></view>
+  <view class="title">指导教师</view>
+  <view class="line"></view>
+  <view class="con2">
+    <view class="headcon">
+    <view class="shadow"><image class="headimage" src="{{headFilePath6}}"></image></view>
+      <image class="headimage" src="{{headFilePath6}}"></image>
+    </view>
+    <view class="con3">
+      <text class="nametext">邱保志</text>
+      <view class="textcon"><text class="positiontext">可行性分析/功能建议/技术支持</text></view>
+    </view>
+  </view>
+</view>
